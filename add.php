@@ -9,12 +9,12 @@
 </head>
 <body>
     <div class="form">
-        <a href="index.html" class="back_button"><img src="images/back.png" alt="button_retour">Retour</a>
+        <a href="index.php" class="back_button"><img src="images/back.png" alt="button_retour">Retour</a>
         <h2>Ajouter un employé</h2>
         <p class="message_error">Veuillez remplir tous les champs</p>
         <form action="" method="post">
             <label for="nom">Nom</label>
-            <input type="text" name="nom">
+            <input type="text" name="nom"> 
             <label for="">Prenom</label>
             <input type="text" name="prenom">
             <label for="">Age</label>

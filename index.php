@@ -11,7 +11,7 @@
 
   <body>
     <div class="container">
-        <a href="add.html" class="button_add"> <img src="images/button_plus.png" alt="button_plus">Ajouter</a>
+        <a href="add.php" class="button_add"> <img src="images/button_plus.png" alt="button_plus">Ajouter</a>
 
         <table>
             
@@ -27,15 +27,7 @@
                 <td>Tony</td>
                 <td>Almeda</td>
                 <td>35 ans</td>
-                <td><a href=""><img src="images/pen.png" alt=""></a></td>
-                <td><a href=""><img src="images/trash.png" alt=""></a></td>
-            </tr>
-
-            <tr>
-                <td>Booba</td>
-                <td>elieyaffa</td>
-                <td>48 ans</td>
-                <td><a href=""><img src="images/pen.png" alt=""></a></td>
+                <td><a href="modify.php"><img src="images/pen.png" alt=""></a></td>
                 <td><a href=""><img src="images/trash.png" alt=""></a></td>
             </tr>
 
