@@ -91,6 +91,10 @@ h2{
 .message_error{
     color: red;
 }
+label{
+    margin-top: 5px;
+    text-transform: uppercase;
+}
 input{
     padding: 5px;
     border: 1px solid #999;
@@ -100,7 +104,7 @@ input{
 input:focus{
     border: 1px solid #ffcb61;
 }
-input [type = "submit"]{
+input[type="submit"]{
     margin-top: 25px;
     background-color: #2bc48a;
     border: 1px solid #2bc48a;
