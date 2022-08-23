@@ -23,13 +23,33 @@
                 <th>Supprimer</th>
             </tr>
 
-            <tr>
-                <td>Tony</td>
-                <td>Almeda</td>
-                <td>35 ans</td>
-                <td><a href="modify.php"><img src="images/pen.png" alt=""></a></td>
-                <td><a href=""><img src="images/trash.png" alt=""></a></td>
-            </tr>
+            <?php
+                // inclure la page de connection
+                include_once "connection.php";
+
+                // requete pour afficher les employes depuis la base donnee
+                $querySelector = "SELECT * FROM employe_table";
+                $requete = mysqli_query($connection_to_database, $querySelector);
+
+                if (mysqli_num_rows($requete) == 0){
+                    // s'il ya pas d'employe dans la base de donnée on affiche ce message
+                    echo "Pas employe enregistré pour le moment <br> Merci de les Ajouter !";
+                }else{
+                    // si non on affiche les employes qui sont dans la base donnee
+                    while($employe_in_database = mysqli_fetch_assoc($requete)){
+                       ?>
+                            <tr>
+                                <td><?=$employe_in_database["nom"]?></td>
+                                <td><?=$employe_in_database["prenom"]?></td>
+                                <td><?=$employe_in_database["age"]?></td>
+                                <td><a href="modify.php?id=<?=$employe_in_database["id"]?>"><img src="images/pen.png" alt="pen image"></a></td>
+                                <td><a href="delete.php?id=<?=$employe_in_database["id"]?>"><img src="images/trash.png" alt="trash image"></a></td>
+                            
+                            </tr>
+                        <?php 
+                    }
+                }
+            ?>
 
         </table>
     </div>
