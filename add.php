@@ -11,7 +11,7 @@
 
     <?php
         // verifier que le button Ajouter à été cliqué
-        if (isset($_POST['button']))
+        if (isset($_POST['button'])) // variable global
 
         // recupeartion des valeurs des variables
         extract($_POST);

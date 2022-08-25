@@ -23,7 +23,7 @@
         $row_in_database = mysqli_fetch_assoc($requete);
 
 
-        // verifier que le button Ajouter à été cliqué
+        // verifier que le button Modifier à été cliqué
         if (isset($_POST['button']))
 
         // recupeartion des valeurs des variables
